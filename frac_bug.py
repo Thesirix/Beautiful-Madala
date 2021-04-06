@@ -8,3 +8,6 @@ last_pos = (0, 0)
 threshold = 100
 closing = False  
 
+
+def generate_mandala_params():
+    num_petals = random.randint(8, 24) * 2
