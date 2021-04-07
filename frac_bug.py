@@ -14,3 +14,6 @@ def generate_mandala_params():
     color = (random.random(), random.random(), random.random())
     return num_petals, color
 
+def random_fractal(length, order, angle, depth):
+    if order == 0 or depth >= 10:
+        turtle.forward(length)
