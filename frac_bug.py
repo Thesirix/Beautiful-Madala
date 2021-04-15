@@ -17,3 +17,6 @@ def generate_mandala_params():
 def random_fractal(length, order, angle, depth):
     if order == 0 or depth >= 10:
         turtle.forward(length)
+    else:
+        turtle.left(angle)
+        random_fractal(length / 1.5, order - 1, angle, depth + 1)
