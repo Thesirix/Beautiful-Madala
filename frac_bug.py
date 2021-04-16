@@ -20,3 +20,7 @@ def random_fractal(length, order, angle, depth):
     else:
         turtle.left(angle)
         random_fractal(length / 1.5, order - 1, angle, depth + 1)
+        turtle.right(angle * 2)
+        random_fractal(length / 1.5, order - 1, angle, depth + 1)
+        turtle.left(angle)
+
