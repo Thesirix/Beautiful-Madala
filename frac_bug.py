@@ -27,3 +27,6 @@ def random_fractal(length, order, angle, depth):
 def draw_fractal_petal(length, order, angle):
     random_fractal(length, order, angle, 0)
     turtle.right(120)
+    random_fractal(length, order, angle, 0)
+    turtle.right(120)
+    random_fractal(length, order, angle, 0)
