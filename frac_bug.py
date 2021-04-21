@@ -30,3 +30,6 @@ def draw_fractal_petal(length, order, angle):
     random_fractal(length, order, angle, 0)
     turtle.right(120)
     random_fractal(length, order, angle, 0)
+    turtle.right(120)
+
+def draw_mandala(num_petals, color):
