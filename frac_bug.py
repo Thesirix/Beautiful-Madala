@@ -33,3 +33,6 @@ def draw_fractal_petal(length, order, angle):
     turtle.right(120)
 
 def draw_mandala(num_petals, color):
+    turtle.pencolor(color)
+    angle = 360 / num_petals
+    order = 2
