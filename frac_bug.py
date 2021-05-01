@@ -36,3 +36,7 @@ def draw_mandala(num_petals, color):
     turtle.pencolor(color)
     angle = 360 / num_petals
     order = 2
+    length = 50
+
+    fractal_angle = random.randint(15, 45)
+
