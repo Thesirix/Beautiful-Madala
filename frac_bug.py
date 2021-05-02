@@ -44,3 +44,6 @@ def draw_mandala(num_petals, color):
         draw_fractal_petal(length, order, fractal_angle)
         turtle.right(180 - angle)
 
+def on_button_down(x, y):
+    global drawing
+    turtle.penup()
