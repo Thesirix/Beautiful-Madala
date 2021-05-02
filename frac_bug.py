@@ -47,3 +47,6 @@ def draw_mandala(num_petals, color):
 def on_button_down(x, y):
     global drawing
     turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    drawing = True
