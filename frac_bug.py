@@ -50,3 +50,6 @@ def on_button_down(x, y):
     turtle.goto(x, y)
     turtle.pendown()
     drawing = True
+    num_petals, color = generate_mandala_params()
+    draw_mandala(num_petals, color)
+
