@@ -53,3 +53,7 @@ def on_button_down(x, y):
     num_petals, color = generate_mandala_params()
     draw_mandala(num_petals, color)
 
+def on_button_up(x, y):
+    global drawing
+    drawing = False
+
