@@ -57,3 +57,6 @@ def on_button_up(x, y):
     global drawing
     drawing = False
 
+def on_right_click(x, y):
+    turtle.clear()
+
