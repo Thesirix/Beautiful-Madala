@@ -60,3 +60,6 @@ def on_button_up(x, y):
 def on_right_click(x, y):
     turtle.clear()
 
+def draw_while_mouse_down(x, y):
+    global drawing, last_pos
+    if drawing:
