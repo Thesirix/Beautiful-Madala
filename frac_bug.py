@@ -63,3 +63,6 @@ def on_right_click(x, y):
 def draw_while_mouse_down(x, y):
     global drawing, last_pos
     if drawing:
+        distance = math.sqrt((x - last_pos[0])**2 + (y - last_pos[1])**2)
+        if distance > threshold:
+            turtle.penup()
