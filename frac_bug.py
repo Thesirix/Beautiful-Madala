@@ -69,3 +69,6 @@ def draw_while_mouse_down(x, y):
             turtle.goto(x, y)
             turtle.pendown()
             num_petals, color = generate_mandala_params()
+            draw_mandala(num_petals, color)
+            last_pos = (x, y)
+
