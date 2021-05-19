@@ -66,3 +66,6 @@ def draw_while_mouse_down(x, y):
         distance = math.sqrt((x - last_pos[0])**2 + (y - last_pos[1])**2)
         if distance > threshold:
             turtle.penup()
+            turtle.goto(x, y)
+            turtle.pendown()
+            num_petals, color = generate_mandala_params()
