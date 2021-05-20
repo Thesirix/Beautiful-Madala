@@ -72,3 +72,6 @@ def draw_while_mouse_down(x, y):
             draw_mandala(num_petals, color)
             last_pos = (x, y)
 
+def close_program(event):
+    global running
+    running = False
