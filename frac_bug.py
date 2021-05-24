@@ -75,3 +75,6 @@ def draw_while_mouse_down(x, y):
 def close_program(event):
     global running
     running = False
+    turtle.getcanvas().unbind('<Destroy>')  
+    turtle.bye()
+
