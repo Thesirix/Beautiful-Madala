@@ -78,3 +78,6 @@ def close_program(event):
     turtle.getcanvas().unbind('<Destroy>')  
     turtle.bye()
 
+def on_close():
+    global closing
+    if not closing:
