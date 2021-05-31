@@ -81,3 +81,6 @@ def close_program(event):
 def on_close():
     global closing
     if not closing:
+        close_program(None)
+
+turtle.speed(0)
