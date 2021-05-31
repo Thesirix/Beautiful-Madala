@@ -84,3 +84,6 @@ def on_close():
         close_program(None)
 
 turtle.speed(0)
+turtle.tracer(0)
+
+turtle.getcanvas().bind("<Button-1>", lambda event: on_button_down(event.x - turtle.window_width() / 2, turtle.window_height() / 2 - event.y))
