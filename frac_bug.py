@@ -91,3 +91,6 @@ turtle.getcanvas().bind("<ButtonRelease-1>", lambda event: on_button_up(event.x 
 turtle.getcanvas().bind("<Button-3>", lambda event: on_right_click(event.x - turtle.window_width() / 2, turtle.window_height() / 2 - event.y))
 turtle.getcanvas().bind("<Motion>", lambda event: draw_while_mouse_down(event.x - turtle.window_width() / 2, turtle.window_height() / 2 - event.y))
 
+turtle.getcanvas().bind("<Destroy>", close_program)
+turtle.getcanvas().winfo_toplevel().protocol("WM_DELETE_WINDOW", on_close)  
+turtle.mainloop()
