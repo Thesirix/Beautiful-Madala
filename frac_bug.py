@@ -87,3 +87,7 @@ turtle.speed(0)
 turtle.tracer(0)
 
 turtle.getcanvas().bind("<Button-1>", lambda event: on_button_down(event.x - turtle.window_width() / 2, turtle.window_height() / 2 - event.y))
+turtle.getcanvas().bind("<ButtonRelease-1>", lambda event: on_button_up(event.x - turtle.window_width() / 2, turtle.window_height() / 2 - event.y))
+turtle.getcanvas().bind("<Button-3>", lambda event: on_right_click(event.x - turtle.window_width() / 2, turtle.window_height() / 2 - event.y))
+turtle.getcanvas().bind("<Motion>", lambda event: draw_while_mouse_down(event.x - turtle.window_width() / 2, turtle.window_height() / 2 - event.y))
+
